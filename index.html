@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jed van Eeden WDD 231 course home page, With info reagarding previous courses.">
+    <meta name="author" content="Jed van Eeden">
+    <meta name="theme-color" content="#102a43">
+    <title>Home | WDD 231 Jed van Eeden</title>
+    <link rel="icon" href="images/fat_gumball.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="identity">
+            <img class="site-logo" src="images/fat_gumball.webp" alt="" width="48" height="48">
+            <span>Jed van Eeden</span>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="chamber/">Chamber</a>
+            <a href="final/">Final</a>
+        </nav>
+    </header>
+
+    <main id="main-content" class="page-content">
+        <div class="page-heading">
+            <p class="eyebrow">WDD 231 · Web Frontend Development I</p>
+            <h1>Home</h1>
+        </div>
+
+        <div class="introduction">
+            <section class="panel about-panel" aria-labelledby="about-heading">
+                <h2 id="about-heading">About Me</h2>
+                <p>Hello! My name is Jed, I am a Software/Web development student from Cape Town, South Africa. I look forward to learning all i can from this course and improvoing upon my existing coding skills.</p>
+                <p>This page serves as a hub for this course's progress, including the assignments. It will also keep track of which courses i have already completed. The logo image of this site is Gumball Watterson for The Amazing World of Gumball. He is my favourite cartoon charater so i thought i'd throw a funny picture of him in here.</p>
+            </section>
+
+            <section class="panel photo-panel" aria-labelledby="photo-heading">
+                <h2 id="photo-heading">Student Photo</h2>
+                <img class="student-illustration" src="images/student_picture.webp" alt="A photo of Jed and his friend" width="520" height="360">
+                <p class="image-caption">A friend and I at a comic store(im on the left)</p>
+            </section>
+        </div>
+
+        <section class="panel certificate-panel" aria-labelledby="certificate-heading">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">My progress so far...</p>
+                    <h2 id="certificate-heading">Web and Computer Programming Certificate</h2>
+                </div>
+                <p class="credit-total" aria-live="polite"><span id="credit-total">0</span> credits shown</p>
+            </div>
+            <div class="course-filters" role="group" aria-label="Filter courses">
+                <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All Courses</button>
+                <button class="filter-button" type="button" data-filter="WDD" aria-pressed="false">WDD Courses</button>
+                <button class="filter-button" type="button" data-filter="CSE" aria-pressed="false">CSE Courses</button>
+            </div>
+            <div class="course-grid" id="course-list" aria-live="polite"></div>
+            <p class="completion-note"><span class="completion-dot" aria-hidden="true"></span> Completed courses are highlighted.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <nav class="social-links" aria-label="Social media">
+            <a href="https://github.com/jedkw06/wdd231" aria-label="GitHub repository">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.7 2.62 1.21 3.26.93.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3.01 0 4.3-2.62 5.24-5.11 5.51.4.35.76 1.03.76 2.08v3.06c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 2H3.55A1.55 1.55 0 0 0 2 3.55v16.9A1.55 1.55 0 0 0 3.55 22h16.9A1.55 1.55 0 0 0 22 20.45V3.55A1.55 1.55 0 0 0 20.45 2ZM8 18H5V9h3ZM6.5 7.77a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5ZM19 18h-3v-4.38c0-1.04-.02-2.38-1.45-2.38-1.45 0-1.67 1.13-1.67 2.3V18h-3V9h2.88v1.23h.04A3.16 3.16 0 0 1 15.64 8.7C18.68 8.7 19 10.7 19 13.3Z"/></svg>
+            </a>
+        </nav>
+        <p class="copyright">&copy; <span id="currentyear"></span> Jed van Eeden <span class="footer-divider">·</span> South Africa</p>
+        <p class="modified">Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

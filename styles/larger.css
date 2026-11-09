@@ -1,0 +1,45 @@
+/* Html */
+
+@media screen and (min-width: 768px) {
+    .information {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+
+/* Head */
+
+/* body */
+
+/* Header */
+
+    .menu-btn {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        position: static;
+        width: auto;
+        flex-direction: row;
+        background-color: transparent;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        width: auto;
+        padding: 0.5rem 1rem;
+        color: var(--color-deep-pine);
+        border-radius: 4px;
+    }
+
+    .navigation a:hover {
+        background-color: var(--color-warm-pine);
+        color: var(--color-deep-pine);
+    }
+
+
+/* main */
+
+/* Footer */
+}

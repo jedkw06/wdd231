@@ -16,6 +16,10 @@
 
 /* Html */
 
+* {
+    box-sizing: border-box;
+}
+
 /* Head */
 
 /* body */
@@ -27,7 +31,11 @@ body {
     color: var(--color-deep-pine);
 }
 
-/* Header */
+header, nav, main, footer {
+    padding: 1rem;
+}
+
+/* Header / nav */
 
 header {
     position: relative;
@@ -99,10 +107,11 @@ header {
     text-decoration: none;
     text-align: center;
     box-sizing: border-box;
+    background-color: var(--color-deep-pine);
 }
 
 .navigation a:hover {
-    background-color: var(--color-muted-celadon);
+    background-color: var(--color-misty-sage);
 }
 
 
@@ -112,7 +121,7 @@ header {
     max-width: 1120px;
     margin: 0 auto;
     padding: 1.5rem;
-    border-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .heading {
@@ -193,15 +202,29 @@ h2 {
     
 }
 
+.course-card {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: white;
+  color: #222;
+}
+
+.course-card.completed {
+  background-color: var(--color-dew-drop);
+  border: 2px solid var(--color-deep-pine);
+}
+
 .buttons {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     margin-bottom: 20px;
 }
 
 .filter {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
     padding: 1rem;
     background-color: var(--color-warm-mist);
@@ -303,7 +326,6 @@ h2 {
         transition-duration: 0.01ms !important;
     }
 }
-
 
 
 

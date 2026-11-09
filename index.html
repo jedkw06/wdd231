@@ -7,6 +7,9 @@
     <meta name="author" content="Jed van Eeden">
     <title>Home | WDD 231 Jed van Eeden</title>
     <link rel="icon" href="images/fat_gumball.webp" type="image/webp">
+    <link href="https://fonts.googleapis.com rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles/smaller.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
@@ -19,17 +22,18 @@
             <img class="mini-logo" src="images/fat_gumball.webp" alt="fat gumball logo">
             <span>Jed van Eeden Home Page</span>
         </div>
-        <button class="menu-btn" id="menu-btn">
+        <button class="menu-btn" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
             <span></span>
             <span></span>
             <span></span>   
         </button>
+    </header>
+
         <nav class="navigation" id="main-nav">
-            <a href="index.html" aria-current="page">Home</a>
+            <a href="index.html">Home</a>
             <a href="chamber_of_commerce.html">Chamber</a>
             <a href="final/">Final</a>
         </nav>
-    </header>
 
     <main id="main-content" class="filler">
         <div class="heading">
@@ -56,20 +60,15 @@
                 </div>
                 <div class="buttons">
                     <div class="filter">
-                        <button onclick="filterCourses('all')">All Courses</button>
-                        <button onclick="filterCourses('WDD')">WDD Courses</button>
-                        <button onclick="filterCourses('CSE')">CSE Courses</button>
+                        <button type="button" data-filter="all">All Courses</button>
+                        <button type="button" data-filter="WDD">WDD Courses</button>
+                        <button type="button" data-filter="CSE">CSE Courses</button>
                     </div>
-                    <div id="itemContainer" class="item-container">
-                        <div class="item" data-category="WDD" data-name="WDD130">WDD130</div>
-                        <div class="item" data-category="CSE" data-name="CSE110">CSE110</div>
-                        <div class="item" data-category="WDD" data-name="WDD131">WDD131</div>
-                        <div class="item" data-category="CSE" data-name="CSE111">CSE111</div>
-                        <div class="item" data-category="WDD" data-name="WDD231">WDD231</div>
-                        <div class="item" data-category="CSE" data-name="CSE210">CSE210</div>
-                    </div>
-                </div>
 
+                    <p id="credits-info" class="credits-info">0 credits shown</p>
+
+                    <div id="item-container" class="item-container"></div>
+                </div>
         </section>
     </main>
 

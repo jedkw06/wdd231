@@ -11,7 +11,13 @@
 
 /* body */
 
-/* Header */
+/* Header / nav */
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     .menu-btn {
         display: none;
@@ -29,17 +35,30 @@
     .navigation a {
         width: auto;
         padding: 0.5rem 1rem;
-        color: var(--color-deep-pine);
+        color: var(--color-dew-drop);
         border-radius: 4px;
     }
 
     .navigation a:hover {
-        background-color: var(--color-warm-pine);
+        background-color: var(--color-misty-sage);
         color: var(--color-deep-pine);
     }
 
 
 /* main */
+
+    .about photo {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .item-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+    }
 
 /* Footer */
 }

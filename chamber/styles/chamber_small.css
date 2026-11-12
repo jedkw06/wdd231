@@ -128,7 +128,7 @@ header {
 }
 
 #business-list.grid section {
-     background-color: lightgrey;
+     background-color: lightgray;
      border: 1px solid black;
     padding: 1rem;
     border-radius: 6px;
@@ -153,7 +153,7 @@ header {
   width: 90px;
   height: 90px;
   object-fit: cover;
-  background-color: #888;
+  background-color: var(--color-warm-alabaster);
 }
 
 #business-list.grid .card-info p {
@@ -197,3 +197,76 @@ header {
 }
 
 /* footer */
+
+.my-foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: var(--color-gold-highveld);
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+
+.chamber-contact {
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.chamber-contact h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--color-deep-navy);
+    font-weight: 700;
+}
+
+.chamber-contact p {
+    margin: 3px 0;
+    color: var(--color-deep-navy);
+    font-weight: 400;
+}
+
+.the-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.the-socials a {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.the-socials svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--color-deep-navy);
+}
+
+.the-socials svg:hover {
+    fill: var(--color-warm-alabaster)
+}
+
+.the-socials img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.my-info {
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.my-info p {
+    margin: 3px 0;
+    font-weight: 600;
+    color: (var(--color-deep-navy))
+}

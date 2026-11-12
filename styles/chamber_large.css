@@ -1,10 +1,46 @@
 /* html */
 
+@media screen and (min-width: 768px) {
+    .information {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
 /* head */
 
 /* body */
 
 /* header */
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        position: static;
+        width: auto;
+        flex-direction: row;
+        background-color: transparent;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        width: auto;
+        padding: 0.5rem 1rem;
+        color: var(--color--warm-alabaster);
+        border-radius: 4px;
+    }
+
+    .navigation a:hover {
+        background-color: var(--color-karro-terracotta);
+    }
 
 /* main */
 

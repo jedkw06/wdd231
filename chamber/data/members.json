@@ -1,0 +1,63 @@
+{
+    "members": [
+        {
+            "name": "Cape Brew Coffee Co.",
+            "addresses": "Cape Town, Western Cape",
+            "phone_number": "021 000 0001",
+            "website_url": "https://capebrewcoffee.com",
+            "image": "../images/coffee_business.webp",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Ubuntu Build & Design",
+            "addresses": "Johannesburg, Gauteng",
+            "phone_number": "011 000 0002",
+            "website_url": "https://ubuntubnd.com",
+            "image": "ubuntu_business.webp",
+            "membershipLevel": 2
+        },
+           {
+            "name": "Savanah Style Boutique",
+            "addresses": "Durban, KwaZulu-Natal",
+            "phone_number": "031 000 0003",
+            "website_url": "https://savanahboutique.com",
+            "image": "boutique_business.webp",
+            "membershipLevel": 1
+        },   {
+            "name": "Green Horizon Energy",
+            "addresses": "StellenBosch, Western Cape",
+            "phone_number": "046 000 0004",
+            "website_url": "https://greenhorizonenergy.com",
+            "image": "energy_business.webp",
+            "membershipLevel": 3
+        },   {
+            "name": "Karoo Escape Adventures",
+            "addresses": "Oudtshoom, Western Cape",
+            "phone_number": "670 000 0005",
+            "website_url": "https://karooadventures.com",
+            "image": "outdoor_business.webp",
+            "membershipLevel": 2
+        },   {
+            "name": "PixelPoint Digital",
+            "addresses": "Pretoria, Guateng",
+            "phone_number": "900 801 0006",
+            "website_url": "https://pixelpointdigital.com",
+            "image": "digital_business.webp",
+            "membershipLevel": 3
+        },   {
+            "name": "Harvest Valley Organics",
+            "addresses": "Bloemfontein, Free State",
+            "phone_number": "024 006 0007",
+            "website_url": "https://harvestvalley.com",
+            "image": "plant_business.webp",
+            "membershipLevel": 1
+        },   {
+            "name": "Mzanzi Financial Solutions",
+            "addresses": "Gqeberha, Eastern Cape",
+            "phone_number": "401 420 0008",
+            "website_url": "https://mzanzifinancial.com",
+            "image": "financial_business.webp",
+            "membershipLevel": 3
+        }
+    ]
+}

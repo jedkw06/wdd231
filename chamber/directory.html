@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../styles/chamber_small.css">
+    <link rel="stylesheet" href="../styles/chamber_large.css">
+    <script src="../scripts/businesses.js" defer></script>
+    <script src="../scripts/date.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
     <meta property="og:title" content="Chamber Directory Page">
     <meta property="og:description" content="The directory page for my WDD231 Chamber of Commerce website">
     <meta property="og:image" content="https://Jedkw06.github.io/wdd231/images/chamber_of_commerce_logo.webp">
@@ -22,6 +27,11 @@
             <img class="mini-logo" src="../images/chamber_of_commerce_logo.webp" alt="chamber logo">
             <span>Western Cape Chamber of Commerce</span>
             </div>
+            <button class="menu-btn" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>   
+        </button>
              <nav class="navigation" id="main-nav">
             <a href="Home.html">Home</a>
             <a href="Directory.html">Directory</a>
@@ -33,11 +43,12 @@
     <main class="main-content">
         <div class="heading">
             <h1>Directory</h1>
-        </div class="filters">
+        </div>
+        <div class="filters">
             <button id="grid-btn" class="active">Grid</button>
             <button id="list-btn">List</button>      
         </div>
-        <article id="bussines-list" class="grid"></article>
+        <article id="business-list" class="grid"></article>
     </main>
 </body>
 <footer>

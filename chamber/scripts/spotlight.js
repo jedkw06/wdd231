@@ -10,8 +10,8 @@ async function getSpotlights() {
         const members = data.members;
 
         const eligibleMembers = members.filter(member =>
-            member.membershipLevel === 2 ||
-            member.membershipLevel === 3
+            member.membershipLevel === "Gold" ||
+            member.membershipLevel === "Silver"
         );
 
         const shuffledMembers = [...eligibleMembers];
@@ -76,7 +76,7 @@ function displaySpotlights(members) {
 
                 <p>
                     Membership:
-                    ${member.membershipLevel === 3 ? "Gold" : "Silver"}
+                    ${member.membershipLevel}
                 </p>
 
             </article>

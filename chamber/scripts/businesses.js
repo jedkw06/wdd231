@@ -35,7 +35,7 @@ function displayBusinesses(members) {
     card.innerHTML = `
       <div class="card-header">
         <h2>${member.name}</h2>
-        <p class="tagline">${member.tagline}</p>
+        <p class="membershipLevel">${member.membershipLevel}</p>
       </div>
       <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
       <div class="card-info">

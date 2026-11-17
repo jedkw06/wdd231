@@ -52,6 +52,19 @@
     grid-template-columns: repeat(3, 1fr);
 } 
 
+.call-action {
+     bottom: 15px;
+    right: 15px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.hero-img img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* footer */
 
 

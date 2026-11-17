@@ -223,6 +223,25 @@ header {
     width: 80px;
 }
 
+#spotlight-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.spotlight-card img {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+}
+
 /* footer */
 
 .my-foot {

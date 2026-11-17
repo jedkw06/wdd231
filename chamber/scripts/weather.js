@@ -65,6 +65,10 @@ function processForecast(data) {
     });
 
     console.log(dailyForecast);
+    const forecastDays = Object.values(Dailyforecast)
+    .slice(0, 3);
+
+    return forecastDays
 }
 
 const forecastDiv = document.querySelector("#forecast");

@@ -95,6 +95,12 @@ header {
     background-color: var(--color-karro-terracotta);
 }
 
+.navigation a.active {
+    color: var(--color-deep-navy);
+    font-weight: bold;
+    border-bottom: 3px solid var(--color-karro-terracotta);
+    background-color: var(--color-warm-alabaster)
+}
 
 /* main */
 

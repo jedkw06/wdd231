@@ -3,37 +3,55 @@ const courses = [
     subject: "WDD",
     number: 231,
     credits: 2,
-    completed: false
+    completed: false,
+    description: "learning more complex javascript and web developement standards.",
+    certificate: "Web and Computer Programming",
+    technology: "HTML, CSS, Javascript",
   },
   {
     subject: "CSE",
     number: 210,
     credits: 2,
-    completed: true
+    completed: true,
+    description: "learning the basics of C# and how to use functions",
+    certificate: "Web and Computer Programming",
+    technology: "C#",
   },
   {
     subject: "CSE",
     number: 110,
     credits: 2,
-    completed: true
+    completed: true,
+    description: "learning the basics of Python",
+    certificate: "Web and Computer Programming",
+    technology: "Python 3",
   },
   {
     subject: "CSE",
     number: 111,
     credits: 2,
-    completed: true
+    completed: true,
+    description: "learning how to use functions in Python",
+    certificate: "Web and Computer Programming",
+    technology: "Python 3",
   },
   {
     subject: "WDD",
     number: 130,
     credits: 2,
-    completed: true
+    completed: true,
+    description: "learning the basics of html and css",
+    certificate: "Web and Computer Programming",
+    technology: "HTML, CSS",
   },
   {
     subject: "WDD",
     number: 131,
     credits: 2,
-    completed: true
+    completed: true,
+    description: "learning the basics of javascript while continueing html and css",
+    certificate: "Web and Computer Programming",
+    technology: "HTML, CSS, javascript",
   }
 ];
 
@@ -49,9 +67,12 @@ function displayCourses(filter = "all") {
   courseList.innerHTML = "";
 
   filteredCourses.forEach(course => {
-    const card = document.createElement("article");
+    const card = document.createElement("button");
 
+    card.type = "button";
     card.classList.add("course-card");
+    card.dataset.subject = course.subject;
+    card.dataset.number = course.number;
 
     if (course.completed) {
       card.classList.add("completed");

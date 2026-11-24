@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Cape Town Chamber of Commerce Join page">
     <meta name="author" content="Jed van Eeden">
-    <title>Directory | Cape Town Chamber of Commerce</title>
+    <title>Join | Cape Town Chamber of Commerce</title>
     <link rel="icon" href="../images/chamber_of_commerce_logo.webp" type="image/webp">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +38,109 @@
             </nav>
     </header>
     <main>
-
+    <h1> Join | Cape Town Chamber of Commerce</h1>
+    <section class="application-section">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" autocomplete="given-name" title="Your First Name" required>
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" autocomplete="given-name" title="Your Last Name" required>
+                <label for="organisation-title">Organisational Title</label>
+                <input type="text" id="organisation-title" name="organisation-title" autocomplete="organisation-title" title="Your Organisational Title Within The Company" pattern="[A-Za-z -]{7,}" placeholder="Business Manager" required>
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" autocomplete="email" title="Your Email Address" placeholder="example123@capetown.co.za" required>
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" title="Your phone Number" required>
+            </fieldset>
+            <fieldset>
+                 <label for="Business">Business Name*</label>
+                <input type="text" id="business" name="business" autocomplete="organization" title="Name of Organization" required>
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label for="membership">Select Membership Level</label>
+                <select id="membership" name="membership" required>
+                    <option value="" disable selected>Choose a Membership</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </fieldset>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input type="submit" value="Submit Membership Application" class="submit-button">
+        </form>
+    </section>
+    <section class="membship-section">
+        <h2>Membership Options: </h2>
+        <div class="membership-cards">
+            <article class="membership-card-np">
+                <dialog id="np-details">
+                    <h2>NP Membership</h2>
+                    <p>This membership is available to non-profit organizations at no cost.</p>
+                    <ul>
+                        <li>Access to networking events</li>
+                        <li>Community business resources</li>
+                        <li>Non-profit organization support</li>
+                    </ul>
+                    <button type="button" class="close-modal">Close</button>
+                </dialog>
+                <h3>NP Membership</h3>
+                <p>For non-profit organizations</p>
+                <button type="button" class="modal-link">View Benefits</button>
+            </article>
+            <article class="membership-card-bronze">
+                <dialog id="bronze-details">
+                    <h2>Bronze Membership</h2>
+                    <p>Our entry-level paid membership.</p>
+                    <ul>
+                        <li>Networking opportunities</li>
+                        <li>Business directory listing</li>
+                        <li>Access to selected events</li>
+                    </ul>
+                    <button type="button" class="close-modal">Close</button>
+                </dialog>
+                <h3>Bronze Membership</h3>
+                <p>Start growing your business network.</p>
+                <button type="button" class="modal-link">View Benefits</button>
+            </article>
+            <article class="membership-card-silver">
+                <dialog id="silver-details">
+                    <h2>Silver Membership</h2>
+                    <p>Additional benefits for growing businesses.</p>
+                    <ul>
+                        <li>All Bronze benefits</li>
+                        <li>Advertising opportunities</li>
+                        <li>Training workshops</li>
+                        <li>Event discounts</li>
+                    </ul>
+                    <button type="button" class="close-modal">Close</button>
+                </dialog>
+                <h3>Silver Membership</h3>
+                <p>More opportunities for business to expand</p>
+                <button type="button" class="modal-link">View Benefits</button>
+            </article>
+            <article class="membership-card-gold">
+                <dialog id="gold-details">
+                    <h2>Gold Membership</h2>
+                    <p>Our premium membership option.</p>
+                    <ul>
+                        <li>All Silver benefits</li>
+                        <li>Priority advertising opportunities</li>
+                        <li>Homepage spotlight opportunities</li>
+                        <li>Exclusive business events</li>
+                    </ul>
+                    <button type="button" class="close-modal">Close</button>
+                </dialog>
+                <h3>Gold Membership</h3>
+                <p>Premium business networking opportunities.</p>
+                <button type="button" class="modal-link">View Benefits</button>
+            </article>
+        </div>
+    </section>
     </main>
     <footer class="my-foot">
         <div class="chamber-contact">

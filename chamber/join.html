@@ -46,25 +46,25 @@
                 <label for="first-name">First Name*</label>
                 <input type="text" id="first-name" name="first-name" autocomplete="given-name" title="Your First Name" required>
                 <label for="last-name">Last Name*</label>
-                <input type="text" id="last-name" name="last-name" autocomplete="given-name" title="Your Last Name" required>
-                <label for="organisation-title">Organisational Title</label>
-                <input type="text" id="organisation-title" name="organisation-title" autocomplete="organisation-title" title="Your Organisational Title Within The Company" pattern="[A-Za-z -]{7,}" placeholder="Business Manager" required>
+                <input type="text" id="last-name" name="last-name" autocomplete="family-name" title="Your Last Name" required>
+                <label for="organisation-title">Organizational Title</label>
+                <input type="text" id="organization-title" name="organization-title" autocomplete="organization-title" title="Your Organisational Title Within The Company" pattern="[A-Za-z -]{7,}" placeholder="Business Manager" required>
                 <label for="email">Email Address*</label>
                 <input type="email" id="email" name="email" autocomplete="email" title="Your Email Address" placeholder="example123@capetown.co.za" required>
                 <label for="phone">Phone Number*</label>
                 <input type="tel" id="phone" name="phone" autocomplete="tel" title="Your phone Number" required>
             </fieldset>
             <fieldset>
-                 <label for="Business">Business Name*</label>
+                <label for="business">Business Name*</label>
                 <input type="text" id="business" name="business" autocomplete="organization" title="Name of Organization" required>
                 <label for="description">Description</label>
-                <textarea id="description" name="description" rows="5"></textarea>
+                <textarea id="description" name="description" rows="5" title="Describe your Organization"></textarea>
             </fieldset>
             <fieldset>
                 <legend>Membership Level</legend>
                 <label for="membership">Select Membership Level (View Options Below)</label>
                 <select id="membership" name="membership" required>
-                    <option value="" disable selected>Choose a Membership</option>
+                    <option value="" disabled selected>Choose a Membership</option>
                     <option value="np">NP Membership</option>
                     <option value="bronze">Bronze Membership</option>
                     <option value="silver">Silver Membership</option>

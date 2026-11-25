@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cape Town Chamber of Commerce Thank You page">
+    <meta name="author" content="Jed van Eeden">
+    <title>Application Recieved | Thank You!</title>
+    <link rel="icon" href="../images/chamber_of_commerce_logo.webp" type="image/webp">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/chamber_small.css">
+    <link rel="stylesheet" href="styles/chamber_large.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <meta property="og:title" content="Chamber Thank You Page |Cape Town CC">
+    <meta property="og:description" content="The Thank You page for The Cape Town Chamber of Commerce website">
+    <meta property="og:image" content="https://Jedkw06.github.io/wdd231/images/chamber_of_commerce_logo.webp">
+    <meta property="og:url" content="https://Jedkw06.github.io/wdd231/chamber/directory.html">
+</head>
+<body>
+    <header>
+            <div class="logo">
+            <img class="mini-logo" src="../images/chamber_of_commerce_logo.webp" alt="chamber logo">
+            <span>Cape Town Chamber of Commerce</span>
+            </div>
+            <button class="menu-btn" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>   
+        </button>
+             <nav class="navigation" id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+            </nav>
+    </header>
+    <main>
+        <section class="application-section">
+            <h1>Thank You!</h1>
+            <P> Your Membership Application has been Submitted!</P>
+            <h2>Application Info: </h2>
+            <div id="application-details">
+                <p>
+                    <strong>First Name:</strong>
+                    <span id="display-first-name"></span>
+                </p>
+                <p>
+                    <strong>Last Name:</strong>
+                    <span id="display-last-name"></span>
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <span id="display-email"></span>
+                </p>
+                <p>
+                    <strong>Mobile Number:</strong>
+                    <span id="display-phone"></span>
+                </p>
+                <p>
+                    <strong>Business Name:</strong>
+                    <span id="display-business"></span>
+                </p>
+                <p>
+                    <strong>Application Date:</strong>
+                    <span id="display-timestamp"></span>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="my-foot">
+        <div class="chamber-contact">
+            <h2>Cape Town Chamber of Commerce</h2>
+            <p>South Africa</p>
+            <p>info@capetownchamber.co.za</p>
+            <p>Phone: +27 067 4209</p>
+        </div>
+        <nav class="the-socials">
+            <a href="https://www.youtube.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 2H3.55A1.55 1.55 0 0 0 2 3.55v16.9A1.55 1.55 0 0 0 3.55 22h16.9A1.55 1.55 0 0 0 22 20.45V3.55A1.55 1.55 0 0 0 20.45 2ZM8 18H5V9h3ZM6.5 7.77a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5ZM19 18h-3v-4.38c0-1.04-.02-2.38-1.45-2.38-1.45 0-1.67 1.13-1.67 2.3V18h-3V9h2.88v1.23h.04A3.16 3.16 0 0 1 15.64 8.7C18.68 8.7 19 10.7 19 13.3Z"/></svg>
+            </a>
+            <a href="https://www.twitter.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </a>
+        </nav>
+        <div class="my-info">
+        <p>WDD 231 project | Jed van Eeden</p>
+        <p>&copy; <span id="currentyear"></span>
+            Cape Town Chamber of Commerce
+        </p>
+        <p class="modified">Last modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>

@@ -90,6 +90,7 @@ header {
     text-align: center;
     box-sizing: border-box;
     background-color: var(--color-springbok-green);
+    transition: background-color 0.3s ease;
 }
 
 .navigation a:hover {
@@ -128,10 +129,11 @@ header {
     text-decoration: none;
     font-weight: bold;
     border-radius: 6px;
+    transition: background-color 0.3s ease;
 }
 
 .call-action:hover {
-    background-color: var(--color-karro-terracotta)
+    background-color: var(--color-karro-terracotta);
 }
 
 .filters {
@@ -146,6 +148,7 @@ header {
     border: 1px solid black;
     background-color: white;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .filters button.active {
@@ -292,6 +295,150 @@ header {
     object-fit: contain;
 }
 
+.application-section {
+    background-color: var(--color-warm-alabaster);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.application-section h1 {
+    margin-top: 0;
+    margin-bottom: 1.5rem
+}
+
+.membership-section h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem
+}
+
+.application-section fieldset {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: lightgray;
+}
+
+.application-section legend {
+    font-weight: 500;
+    padding: 0 1rem;
+}
+
+.application-section label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.application-section input,
+.application-section select,
+.application-section textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: var(--color-springbok-green);
+    color: var(--color-warm-alabaster);
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--color-karro-terracotta);
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1.5rem;
+}
+.membership-card-np {
+    background-color: pink;
+}
+
+.membership-card-bronze {
+    background-color: #CD7F32;
+}
+
+.membership-card-silver {
+    background-color: silver;
+}
+
+.membership-card-gold {
+    background-color: gold;
+}
+
+.membership-card-np,
+.membership-card-bronze,
+.membership-card-silver,
+.membership-card-gold {
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0;
+    animation: cardEntrance 0.8s ease forwards;
+}
+
+.membership-card-np,
+.membership-card-bronze,
+.membership-card-silver,
+.membership-card-gold:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.membership-card-np,
+.membership-card-bronze,
+.membership-card-silver,
+.membership-card-gold:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.membership-card-np,
+.membership-card-bronze,
+.membership-card-silver,
+.membership-card-gold:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-cards button {
+    background-color: var(--color-warm-alabaster);
+    border: 1px solid black;
+    border-radius: 8px;
+    color: black;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    padding: 1rem;
+}
+
+.membership-cards button:hover {
+    background-color: lightgray;
+}
+
+
 /* footer */
 
 .my-foot {
@@ -344,10 +491,11 @@ header {
     width: 25px;
     height: 25px;
     fill: var(--color-deep-navy);
+    transition: background-color 0.3s ease;
 }
 
 .the-socials svg:hover {
-    fill: var(--color-warm-alabaster)
+    fill: var(--color-warm-alabaster);
 }
 
 .the-socials img {
